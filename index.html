@@ -1,159 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xinyi Xu — Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="徐莘宜的新闻、影像与人物专访作品集。">
+  <title>Xinyi Xu — 作品集</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="hero" id="top">
-    <h1>Xinyi Xu</h1>
-    <div class="subhead">Journalism &amp; Visual Storytelling</div>
-    <a class="scroll-hint" href="#work" aria-label="Scroll to selected work">
-      <span>Scroll</span>
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M7 13l5 5 5-5"></path>
-        <path d="M7 6l5 5 5-5"></path>
-      </svg>
-    </a>
-  </section>
+  <header class="site-header">
+    <a class="wordmark" href="#top">Xinyi Xu<span data-zh="作品集" data-en="PORTFOLIO">作品集</span></a>
+    <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch to English">EN</button>
+  </header>
 
-  <div class="index-bar">
-    <p>2 Films <span class="dot">·</span> 3 News Features <span class="dot">·</span> 1 Interview <span class="dot">·</span> 1 Broadcast</p>
-  </div>
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow" data-zh="新闻 · 影像 · 人物" data-en="JOURNALISM · FILM · PEOPLE">新闻 · 影像 · 人物</p>
+      <h1>Xinyi<br class="name-break"> Xu<span class="hero-period">.</span></h1>
+      <div class="hero-bottom">
+        <p class="hero-role" data-zh="记者 / 影像创作者" data-en="Journalist / Filmmaker">记者 / 影像创作者</p>
+        <p class="hero-intro" data-zh="关注真实的人与正在发生的事。通过新闻片、短片与人物专访，记录文化现场、公共议题，以及人与技术之间的情感。" data-en="Stories about real people and the world around them—told through news features, short films, and interviews on culture, public life, and our relationship with technology.">关注真实的人与正在发生的事。通过新闻片、短片与人物专访，记录文化现场、公共议题，以及人与技术之间的情感。</p>
+      </div>
+    </section>
 
-  <section class="portfolio" id="work">
-    <div class="portfolio-header">
-      <h2>Selected Work</h2>
-      <p>Short films · TV news features · Interviews · On-camera reporting</p>
-    </div>
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <h2 id="work-title" data-zh="精选作品" data-en="Selected work">精选作品</h2>
+        <span class="work-count" data-zh="作品 / 06" data-en="SELECTED / 06">作品 / 06</span>
+      </div>
 
-    <div class="grid">
-      <article class="card media-video">
-        <div class="card-media">
-          <iframe
-            class="video-embed"
-            src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=117636419557580&amp;bvid=BV1Mksm6jEoD&amp;cid=43706944443&amp;p=1"
-            title="Echoes of the City"
-            scrolling="no"
-            border="0"
-            frameborder="no"
-            framespacing="0"
-            allowfullscreen="true">
-          </iframe>
-        </div>
-        <div class="card-content">
-          <div class="category">Short Film · 2025</div>
-          <h3>Echoes of the City</h3>
-          <p>A 6-minute observational documentary about night-shift workers and the quiet rhythm of urban life.</p>
-        </div>
-      </article>
-
-      <article class="card media-article">
-        <a href="https://m.hbtv.com.cn/p/4454920.html" class="card-media" aria-label="Read the Hubei TV story about Jingchu Impression" target="_blank" rel="noopener noreferrer">
-          <div class="article-preview">
-            <div class="pub">长江云新闻 · Hubei TV</div>
-            <h4>《荆楚映象》在汉首演 杨丽萍谭盾携手打造</h4>
-            <p>杨丽萍与谭盾携手，以舞台艺术呈现荆楚文化与屈原故事。</p>
-            <div class="divider"></div>
+      <div class="work-grid">
+        <article class="work-card film-card">
+          <div class="media-frame">
+            <iframe
+              class="video-embed"
+              src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=117636419557580&amp;bvid=BV1Mksm6jEoD&amp;cid=43706944443&amp;p=1"
+              title="短片作品 01 / Short Film 01"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
           </div>
-        </a>
-        <div class="card-content">
-          <div class="category">TV News Feature · Hubei TV</div>
-          <h3>《荆楚映象》在汉首演</h3>
-          <p>Coverage of the Wuhan premiere of an original epic stage production inspired by Chu culture.</p>
-        </div>
-      </article>
-
-      <article class="card media-video">
-        <div class="card-media">
-          <iframe
-            class="video-embed"
-            src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=117636637661789&amp;bvid=BV1Ltsm6dEib&amp;cid=43708318397&amp;p=1"
-            title="The vanished seal"
-            scrolling="no"
-            border="0"
-            frameborder="no"
-            framespacing="0"
-            allowfullscreen="true">
-          </iframe>
-        </div>
-        <div class="card-content">
-          <div class="category">Short Film</div>
-          <h3>The vanished seal</h3>
-        </div>
-      </article>
-
-      <article class="card media-article">
-        <a href="https://app.cctv.com/special/m/livevod/index.html?guid=72308f238ed14e3999542541bc77b66d&amp;vtype=2" class="card-media" aria-label="Watch Xinyi Xu's news report on CCTV Video" target="_blank" rel="noopener noreferrer">
-          <div class="article-preview">
-            <div class="pub">CCTV Video · 央视影音</div>
-            <h4>CCTV News Report</h4>
-            <p>Watch the published news video on the official CCTV Video page.</p>
-            <div class="divider"></div>
+          <div class="card-caption">
+            <div><p class="card-type" data-zh="短片" data-en="SHORT FILM">短片</p><h3 data-zh="短片作品 01" data-en="Short Film 01">短片作品 01</h3></div>
+            <span class="card-index">01</span>
           </div>
-        </a>
-        <div class="card-content">
-          <div class="category">TV News Feature · CCTV</div>
-          <h3>News Report</h3>
-          <p>Watch the original report on CCTV Video.</p>
-        </div>
-      </article>
+        </article>
 
-      <article class="card media-interview">
-        <a href="article.html" class="card-media" aria-label="Read the full feature on AI and human connection">
-          <div class="interview-preview">
-            <div class="quote-icon">“</div>
-            <h4>所爱“非人”</h4>
-            <p>AI能成为我们的情感港湾吗？</p>
+        <article class="work-card news-card">
+          <a class="news-cover cover-theatre" href="https://m.hbtv.com.cn/p/4454920.html" target="_blank" rel="noopener noreferrer" aria-label="阅读《荆楚映象》在汉首演的新闻报道" data-aria-zh="阅读《荆楚映象》在汉首演的新闻报道" data-aria-en="Read the Hubei TV report on Jingchu Impression">
+            <span class="cover-source" data-zh="长江云新闻 ／ 湖北电视台" data-en="HUBEI TV · YANGTZE RIVER CLOUD">长江云新闻 ／ 湖北电视台</span>
+            <span class="cover-title" data-zh="《荆楚映象》在汉首演" data-en="Jingchu Impression premieres in Wuhan">《荆楚映象》在汉首演</span>
+            <span class="cover-foot" data-zh="舞台 · 楚文化 · 武汉" data-en="STAGE · CHU CULTURE · WUHAN">舞台 · 楚文化 · 武汉</span>
+            <span class="cover-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="card-caption">
+            <div><p class="card-type" data-zh="新闻片 · 长江云" data-en="NEWS FEATURE · HUBEI TV">新闻片 · 长江云</p><h3 data-zh="杨丽萍、谭盾携手打造楚文化舞台剧" data-en="Yang Liping and Tan Dun bring Chu culture to the stage">杨丽萍、谭盾携手打造楚文化舞台剧</h3><p class="card-description" data-zh="报道《荆楚映象》在武汉首演，呈现创作团队如何融合传统艺术与现代舞台表达。" data-en="A report on the Wuhan premiere of Jingchu Impression and its meeting of traditional arts and contemporary stagecraft.">报道《荆楚映象》在武汉首演，呈现创作团队如何融合传统艺术与现代舞台表达。</p></div>
+            <span class="card-index">02</span>
           </div>
-        </a>
-        <div class="card-content">
-          <div class="category">Profile · Interview · WeChat</div>
-          <h3>所爱“非人”：AI能成为我们的情感港湾吗？</h3>
-          <p>走近与 AI 建立亲密关系的人们，记录陪伴、慰藉与现实之间的边界。</p>
-          <div class="card-actions">
-            <a href="article.html">网页阅读全文 <span aria-hidden="true">↗</span></a>
-            <a href="https://mp.weixin.qq.com/s/FnAqZMarXb0IJK3CrTPp8g" target="_blank" rel="noopener noreferrer">微信原文 <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-      </article>
+        </article>
 
-      <article class="card media-article">
-        <a href="https://m.hbtv.com.cn/p/4458032.html" class="card-media" aria-label="Read the Hubei TV story about the Hubei Quality Promotion Regulation" target="_blank" rel="noopener noreferrer">
-          <div class="article-preview">
-            <div class="pub">长江云新闻 · Hubei TV</div>
-            <h4>《湖北省质量促进条例》用法治力量守护质量安全</h4>
-            <p>湖北通过质量促进条例，完善质量安全、品牌培育与信用监管制度。</p>
-            <div class="divider"></div>
+        <article class="work-card film-card">
+          <div class="media-frame">
+            <iframe
+              class="video-embed"
+              src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=117636637661789&amp;bvid=BV1Ltsm6dEib&amp;cid=43708318397&amp;p=1"
+              title="The vanished seal"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
           </div>
-        </a>
-        <div class="card-content">
-          <div class="category">TV News Feature · Hubei TV</div>
-          <h3>《湖北省质量促进条例》</h3>
-          <p>A report on Hubei's new legislation for quality standards, consumer protection, and brand development.</p>
-        </div>
-      </article>
-
-      <article class="card media-broadcast">
-        <a href="#" class="card-media" aria-label="Watch Protest Coverage Live">
-          <div class="broadcast-preview">
-            <div class="mic-icon">🎤</div>
-            <span>News Package</span>
+          <div class="card-caption">
+            <div><p class="card-type" data-zh="短片" data-en="SHORT FILM">短片</p><h3>The vanished seal</h3></div>
+            <span class="card-index">03</span>
           </div>
-        </a>
-        <div class="card-content">
-          <div class="category">On-Camera · Reporting</div>
-          <h3>Protest Coverage Live</h3>
-          <p>A 2-minute news package covering the climate march, shot and presented on location.</p>
-        </div>
-      </article>
-    </div>
-  </section>
+        </article>
 
-  <footer>
-    <p>© 2025 Xinyi Xu · Portfolio</p>
+        <article class="work-card news-card">
+          <a class="news-cover cover-cctv" href="https://app.cctv.com/special/m/livevod/index.html?guid=72308f238ed14e3999542541bc77b66d&amp;vtype=2" target="_blank" rel="noopener noreferrer" aria-label="在央视影音观看新闻片" data-aria-zh="在央视影音观看新闻片" data-aria-en="Watch the news feature on CCTV Video">
+            <span class="cover-source" data-zh="央视影音" data-en="CCTV VIDEO">央视影音</span>
+            <span class="cover-title" data-zh="央视新闻报道" data-en="CCTV News Feature">央视新闻报道</span>
+            <span class="cover-foot" data-zh="点击观看原片" data-en="WATCH THE ORIGINAL REPORT">点击观看原片</span>
+            <span class="cover-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="card-caption">
+            <div><p class="card-type" data-zh="新闻片 · 央视影音" data-en="NEWS FEATURE · CCTV VIDEO">新闻片 · 央视影音</p><h3 data-zh="央视新闻报道" data-en="CCTV News Feature">央视新闻报道</h3><p class="card-description" data-zh="作品原片由央视影音发布。点击封面前往平台观看。" data-en="The original report is published on CCTV Video. Follow the link to watch it on the platform.">作品原片由央视影音发布。点击封面前往平台观看。</p></div>
+            <span class="card-index">04</span>
+          </div>
+        </article>
+
+        <article class="work-card news-card">
+          <a class="news-cover cover-quality" href="https://m.hbtv.com.cn/p/4458032.html" target="_blank" rel="noopener noreferrer" aria-label="阅读《湖北省质量促进条例》新闻报道" data-aria-zh="阅读《湖北省质量促进条例》新闻报道" data-aria-en="Read the Hubei TV report on the quality regulation">
+            <span class="cover-source" data-zh="长江云新闻 ／ 湖北电视台" data-en="HUBEI TV · YANGTZE RIVER CLOUD">长江云新闻 ／ 湖北电视台</span>
+            <span class="cover-title" data-zh="以法治守护质量" data-en="Quality, protected by law">以法治守护质量</span>
+            <span class="cover-foot" data-zh="湖北省质量促进条例" data-en="HUBEI QUALITY PROMOTION REGULATION">湖北省质量促进条例</span>
+            <span class="cover-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="card-caption">
+            <div><p class="card-type" data-zh="新闻片 · 长江云" data-en="NEWS FEATURE · HUBEI TV">新闻片 · 长江云</p><h3 data-zh="《湖北省质量促进条例》" data-en="Hubei Quality Promotion Regulation">《湖北省质量促进条例》</h3><p class="card-description" data-zh="聚焦质量安全、消费品追溯、品牌培育与质量信用监管。" data-en="Coverage of product safety, traceability, brand development, and quality-credit oversight.">聚焦质量安全、消费品追溯、品牌培育与质量信用监管。</p></div>
+            <span class="card-index">05</span>
+          </div>
+        </article>
+
+        <article class="work-card interview-card">
+          <a class="interview-cover" href="article.html" aria-label="阅读人物专访《所爱非人》" data-aria-zh="阅读人物专访《所爱非人》" data-aria-en="Read the profile feature Loving the Nonhuman">
+            <span class="cover-source" data-zh="人物专访 · 深度报道" data-en="PROFILE · LONG-FORM FEATURE">人物专访 · 深度报道</span>
+            <span class="interview-quote">“</span>
+            <span class="cover-title" data-zh="所爱“非人”" data-en="Loving the Nonhuman">所爱“非人”</span>
+            <span class="interview-subtitle" data-zh="AI能成为我们的情感港湾吗？" data-en="Can AI become an emotional harbor?">AI能成为我们的情感港湾吗？</span>
+            <span class="cover-arrow" aria-hidden="true">↗</span>
+          </a>
+          <div class="card-caption">
+            <div><p class="card-type" data-zh="人物专访 · 微信原文" data-en="PROFILE · WECHAT ORIGINAL">人物专访 · 微信原文</p><h3 data-zh="所爱“非人”：AI能成为我们的情感港湾吗？" data-en="Loving the Nonhuman: Can AI Become an Emotional Harbor?">所爱“非人”：AI能成为我们的情感港湾吗？</h3><p class="card-description" data-zh="采访与 AI 建立亲密关系的人们，记录陪伴、慰藉与现实之间的边界。" data-en="Conversations with people who form close bonds with AI, exploring companionship, comfort, and the limits of these relationships.">采访与 AI 建立亲密关系的人们，记录陪伴、慰藉与现实之间的边界。</p><div class="card-actions"><a href="article.html" data-zh="网页阅读 ↗" data-en="READ ONLINE ↗">网页阅读 ↗</a><a href="https://mp.weixin.qq.com/s/FnAqZMarXb0IJK3CrTPp8g" target="_blank" rel="noopener noreferrer" data-zh="微信原文 ↗" data-en="WECHAT ORIGINAL ↗">微信原文 ↗</a></div></div>
+            <span class="card-index">06</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#top">Xinyi Xu <span>↑</span></a>
+    <p data-zh="新闻 · 影像 · 人物" data-en="JOURNALISM · FILM · PEOPLE">新闻 · 影像 · 人物</p>
   </footer>
+
+  <script>
+    (function () {
+      var button = document.getElementById("language-toggle");
+      var translations = document.querySelectorAll("[data-zh][data-en]");
+      var accessibleNames = document.querySelectorAll("[data-aria-zh][data-aria-en]");
+      var description = document.querySelector('meta[name="description"]');
+      var language = localStorage.getItem("portfolio-language") || "zh";
+
+      function renderLanguage() {
+        var english = language === "en";
+        document.documentElement.lang = english ? "en" : "zh-CN";
+        document.title = english ? "Xinyi Xu — Portfolio" : "Xinyi Xu — 作品集";
+        description.content = english
+          ? "Selected short films, television news features, and a long-form interview by journalist and filmmaker Xinyi Xu."
+          : "徐莘宜的新闻、影像与人物专访作品集。";
+        translations.forEach(function (element) {
+          element.textContent = element.getAttribute(english ? "data-en" : "data-zh");
+        });
+        accessibleNames.forEach(function (element) {
+          element.setAttribute("aria-label", element.getAttribute(english ? "data-aria-en" : "data-aria-zh"));
+        });
+        button.textContent = english ? "中文" : "EN";
+        button.setAttribute("aria-label", english ? "切换到中文" : "Switch to English");
+      }
+
+      button.addEventListener("click", function () {
+        language = language === "zh" ? "en" : "zh";
+        localStorage.setItem("portfolio-language", language);
+        renderLanguage();
+      });
+
+      renderLanguage();
+    }());
+  </script>
 </body>
 </html>
