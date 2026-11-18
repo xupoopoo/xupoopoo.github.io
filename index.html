@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="林屿的影像与广播作品集">
+  <title>林屿 — 影像创作人</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="返回顶部">林屿</a>
+    <nav aria-label="主导航">
+      <a href="#work">作品</a>
+      <a href="#about">关于</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Film / Radio / Visual</p>
+        <h1 id="hero-title">用声音与画面，<br><em>记录真实的温度。</em></h1>
+        <p class="intro">我是林屿，一名独立影像创作者与广播工作者。<br>用细腻的观察和自然的叙事讲述人与世界的故事。</p>
+        <a class="text-link" href="#work">查看作品 <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="portrait">
+        <img src="assets/portrait.jpg" alt="林屿肖像">
+        <figcaption>Based in Shanghai<br>Available worldwide</figcaption>
+      </figure>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2 id="work-title">精选作品</h2>
+      </div>
+
+      <div class="projects">
+        <article class="project project-large">
+          <a href="#" aria-label="查看《海上的白日梦》">
+            <div class="project-image">
+              <img src="assets/poster-film1.jpg" alt="海上的白日梦海报">
+              <span class="project-number">01</span>
+            </div>
+            <div class="project-meta">
+              <div>
+                <h3>海上的白日梦</h3>
+                <p>纪录短片 · 导演 / 摄影</p>
+              </div>
+              <time datetime="2025">2025</time>
+            </div>
+          </a>
+        </article>
+
+        <article class="project">
+          <a href="#" aria-label="查看《余晖》">
+            <div class="project-image">
+              <img src="assets/poster-film2.jpg" alt="余晖海报">
+              <span class="project-number">02</span>
+            </div>
+            <div class="project-meta">
+              <div>
+                <h3>余晖</h3>
+                <p>人物短片 · 导演</p>
+              </div>
+              <time datetime="2024">2024</time>
+            </div>
+          </a>
+        </article>
+
+        <article class="project project-wide">
+          <a href="#" aria-label="收听《凌晨电台》">
+            <div class="project-image">
+              <img src="assets/poster-broadcast.jpg" alt="凌晨电台海报">
+              <span class="project-number">03</span>
+            </div>
+            <div class="project-meta">
+              <div>
+                <h3>凌晨电台</h3>
+                <p>播客节目 · 制作 / 主持</p>
+              </div>
+              <time datetime="2023">2023—至今</time>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <p class="eyebrow">About me</p>
+      <div class="about-grid">
+        <h2 id="about-title">好奇心，是我<br>最重要的创作工具。</h2>
+        <div class="about-copy">
+          <p>毕业于上海戏剧学院广播电视编导专业。过去五年，我在纪录片、品牌叙事与音频节目之间辗转。</p>
+          <p>我相信，最动人的故事不一定宏大，而是藏在一个人的眼神、一段沉默或一段偶然的对白里。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p class="eyebrow">Let's make something meaningful</p>
+    <a class="footer-email" href="mailto:hello@example.com">hello@example.com</a>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> Lin Yu</p>
+      <div>
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">Bilibili</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
