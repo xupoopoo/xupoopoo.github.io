@@ -69,13 +69,21 @@
       <section class="dialog-collection" data-panel="films" hidden>
         <article class="dialog-work">
           <div class="dialog-video">
-            <iframe class="video-embed" title="Short Film 01" data-src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=117636419557580&amp;bvid=BV1Mksm6jEoD&amp;cid=43706944443&amp;p=1" allowfullscreen></iframe>
+            <button class="video-launch" type="button" data-play-video aria-label="Load Short Film 01">
+              <span class="play-icon" aria-hidden="true">▶</span>
+              <span>Load video player</span>
+            </button>
+            <iframe class="video-embed" title="Short Film 01" data-src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=117636419557580&amp;bvid=BV1Mksm6jEoD&amp;cid=43706944443&amp;p=1&amp;autoplay=0" allowfullscreen hidden></iframe>
           </div>
           <div class="dialog-caption"><span>SHORT FILM · BILIBILI</span><h3>Short Film 01</h3></div>
         </article>
         <article class="dialog-work">
           <div class="dialog-video">
-            <iframe class="video-embed" title="The vanished seal" data-src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=117636637661789&amp;bvid=BV1Ltsm6dEib&amp;cid=43708318397&amp;p=1" allowfullscreen></iframe>
+            <button class="video-launch" type="button" data-play-video aria-label="Load The vanished seal">
+              <span class="play-icon" aria-hidden="true">▶</span>
+              <span>Load video player</span>
+            </button>
+            <iframe class="video-embed" title="The vanished seal" data-src="https://player.bilibili.com/player.html?isOutside=true&amp;aid=117636637661789&amp;bvid=BV1Ltsm6dEib&amp;cid=43708318397&amp;p=1&amp;autoplay=0" allowfullscreen hidden></iframe>
           </div>
           <div class="dialog-caption"><span>SHORT FILM · BILIBILI</span><h3>The vanished seal</h3></div>
         </article>
@@ -137,6 +145,10 @@
       function stopVideos() {
         dialog.querySelectorAll(".video-embed").forEach(function (frame) {
           frame.removeAttribute("src");
+          frame.hidden = true;
+        });
+        dialog.querySelectorAll("[data-play-video]").forEach(function (button) {
+          button.hidden = false;
         });
       }
 
@@ -148,12 +160,16 @@
           dialog.querySelectorAll("[data-panel]").forEach(function (panel) {
             panel.hidden = panel.getAttribute("data-panel") !== key;
           });
-          if (key === "films") {
-            dialog.querySelectorAll(".video-embed").forEach(function (frame) {
-              frame.src = frame.getAttribute("data-src");
-            });
-          }
           dialog.showModal();
+        });
+      });
+
+      dialog.querySelectorAll("[data-play-video]").forEach(function (button) {
+        button.addEventListener("click", function () {
+          var frame = button.parentElement.querySelector(".video-embed");
+          frame.src = frame.getAttribute("data-src");
+          frame.hidden = false;
+          button.hidden = true;
         });
       });
 
