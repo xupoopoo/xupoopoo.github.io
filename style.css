@@ -135,10 +135,16 @@ a { color: inherit; text-decoration: none; }
 .video-preview,
 .broadcast-preview,
 .article-preview,
-.interview-preview {
+.interview-preview,
+.video-embed {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+.video-embed {
+  display: block;
+  border: 0;
 }
 
 .video-preview {
